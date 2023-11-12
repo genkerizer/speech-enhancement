@@ -131,7 +131,6 @@ class MPNet(nn.Module):
         noisy_pha = noisy_pha.unsqueeze(-1).permute(0, 3, 2, 1) # [B, 1, T, F]
         x = torch.cat((noisy_mag, noisy_pha), dim=1) # [B, 2, T, F]
         x = self.dense_encoder(x)
-
         for i in range(self.num_tscblocks):
             x = self.TSConformer[i](x)
         

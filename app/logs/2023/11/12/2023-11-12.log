@@ -1,0 +1,124 @@
+2023-11-12 14:57:05,615 - INFO - method:	{request.method}
+2023-11-12 14:57:05,626 - INFO - filename:	000000000_noise.wav
+2023-11-12 14:57:11,780 - INFO - time:	6.15
+2023-11-12 14:57:11,780 - INFO - status:	200
+2023-11-12 14:57:11,780 - INFO - 127.0.0.1 - - [12/Nov/2023 14:57:11] "POST / HTTP/1.1" 200 -
+2023-11-12 14:57:11,789 - INFO - 127.0.0.1 - - [12/Nov/2023 14:57:11] "GET /statics/database/inputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 14:57:11,794 - INFO - 127.0.0.1 - - [12/Nov/2023 14:57:11] "GET /statics/database/outputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 14:57:52,900 - INFO - 127.0.0.1 - - [12/Nov/2023 14:57:52] "GET / HTTP/1.1" 200 -
+2023-11-12 14:57:52,923 - INFO - 127.0.0.1 - - [12/Nov/2023 14:57:52] "[36mGET /statics/assets/fit-logo.png HTTP/1.1[0m" 304 -
+2023-11-12 14:57:52,924 - INFO - 127.0.0.1 - - [12/Nov/2023 14:57:52] "[36mGET /statics/assets/loading.gif HTTP/1.1[0m" 304 -
+2023-11-12 14:58:03,778 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:03] "GET / HTTP/1.1" 200 -
+2023-11-12 14:58:03,801 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:03] "[36mGET /statics/assets/fit-logo.png HTTP/1.1[0m" 304 -
+2023-11-12 14:58:03,803 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:03] "[36mGET /statics/assets/loading.gif HTTP/1.1[0m" 304 -
+2023-11-12 14:58:05,277 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:05] "GET / HTTP/1.1" 200 -
+2023-11-12 14:58:05,292 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:05] "[36mGET /statics/assets/fit-logo.png HTTP/1.1[0m" 304 -
+2023-11-12 14:58:05,296 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:05] "[36mGET /statics/assets/loading.gif HTTP/1.1[0m" 304 -
+2023-11-12 14:58:08,615 - INFO - method:	{request.method}
+2023-11-12 14:58:08,627 - INFO - filename:	000000000_noise.wav
+2023-11-12 14:58:15,452 - INFO - time:	6.82
+2023-11-12 14:58:15,452 - INFO - status:	200
+2023-11-12 14:58:15,452 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:15] "POST / HTTP/1.1" 200 -
+2023-11-12 14:58:15,462 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:15] "GET /statics/database/inputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 14:58:15,467 - INFO - 127.0.0.1 - - [12/Nov/2023 14:58:15] "GET /statics/database/outputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 15:10:10,606 - INFO -  * Detected change in '/server/app/database.py', reloading
+2023-11-12 16:37:46,377 - INFO - method:	{request.method}
+2023-11-12 16:37:46,386 - INFO - filename:	000000001.wav
+2023-11-12 16:40:03,186 - INFO - method:	{request.method}
+2023-11-12 16:40:03,201 - INFO - filename:	000000000_noise.wav
+2023-11-12 16:40:08,621 - INFO - time:	5.42
+2023-11-12 16:40:08,621 - INFO - status:	200
+2023-11-12 16:40:08,639 - INFO - 127.0.0.1 - - [12/Nov/2023 16:40:08] "POST / HTTP/1.1" 200 -
+2023-11-12 16:40:08,651 - INFO - 127.0.0.1 - - [12/Nov/2023 16:40:08] "GET /statics/database/inputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 16:40:08,660 - INFO - 127.0.0.1 - - [12/Nov/2023 16:40:08] "GET /statics/database/outputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 16:40:11,058 - INFO - 127.0.0.1 - - [12/Nov/2023 16:40:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-11-12 17:45:55,788 - INFO - method:	{request.method}
+2023-11-12 17:45:55,801 - INFO - filename:	000000001.wav
+2023-11-12 17:46:07,703 - INFO - time:	11.9
+2023-11-12 17:46:07,703 - INFO - status:	200
+2023-11-12 17:46:07,717 - INFO - 127.0.0.1 - - [12/Nov/2023 17:46:07] "POST / HTTP/1.1" 200 -
+2023-11-12 17:46:07,727 - INFO - 127.0.0.1 - - [12/Nov/2023 17:46:07] "GET /statics/database/inputs/000000001.wav HTTP/1.1" 200 -
+2023-11-12 17:46:07,735 - INFO - 127.0.0.1 - - [12/Nov/2023 17:46:07] "GET /statics/database/outputs/000000001.wav HTTP/1.1" 200 -
+2023-11-12 19:38:52,651 - INFO -  * Detected change in '/server/app/wsgi.py', reloading
+2023-11-12 20:23:07,635 - INFO - method:	{request.method}
+2023-11-12 20:23:07,645 - INFO - filename:	000000000_noise.wav
+2023-11-12 20:23:11,754 - INFO - time:	4.11
+2023-11-12 20:23:11,754 - INFO - status:	200
+2023-11-12 20:23:11,769 - ERROR - Error occurred while printing GeeksforGeeks
+Traceback (most recent call last):
+  File "/server/app/wsgi.py", line 83, in home_page
+    _delete_db()
+  File "/server/app/wsgi.py", line 43, in _delete_db
+    now = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2023-11-12 20:23:11,769 - INFO - 127.0.0.1 - - [12/Nov/2023 20:23:11] "POST / HTTP/1.1" 200 -
+2023-11-12 20:23:50,505 - INFO -  * Detected change in '/server/app/wsgi.py', reloading
+2023-11-12 20:24:28,118 - INFO - method:	{request.method}
+2023-11-12 20:24:28,130 - INFO - filename:	000000000_noise.wav
+2023-11-12 20:24:32,379 - INFO - time:	4.25
+2023-11-12 20:24:32,379 - INFO - status:	200
+2023-11-12 20:24:32,382 - INFO - 127.0.0.1 - - [12/Nov/2023 20:24:32] "POST / HTTP/1.1" 200 -
+2023-11-12 20:24:32,391 - INFO - 127.0.0.1 - - [12/Nov/2023 20:24:32] "GET /statics/database/inputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 20:24:32,400 - INFO - 127.0.0.1 - - [12/Nov/2023 20:24:32] "GET /statics/database/outputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 20:24:34,909 - INFO - 127.0.0.1 - - [12/Nov/2023 20:24:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-11-12 20:24:53,572 - INFO -  * Detected change in '/server/app/wsgi.py', reloading
+2023-11-12 20:25:47,033 - INFO - method:	{request.method}
+2023-11-12 20:25:47,041 - INFO - filename:	000000000_noise.wav
+2023-11-12 20:25:51,141 - INFO - time:	4.1
+2023-11-12 20:25:51,141 - INFO - status:	200
+2023-11-12 20:25:51,143 - ERROR - Error occurred while printing GeeksforGeeks
+Traceback (most recent call last):
+  File "/server/app/wsgi.py", line 83, in home_page
+    _delete_db()
+  File "/server/app/wsgi.py", line 43, in _delete_db
+    now = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2023-11-12 20:25:51,143 - INFO - 127.0.0.1 - - [12/Nov/2023 20:25:51] "POST / HTTP/1.1" 200 -
+2023-11-12 20:26:15,453 - INFO -  * Detected change in '/server/app/wsgi.py', reloading
+2023-11-12 20:26:39,402 - INFO - method:	{request.method}
+2023-11-12 20:26:39,413 - INFO - filename:	000000000_noise.wav
+2023-11-12 20:26:43,599 - INFO - time:	4.18
+2023-11-12 20:26:43,599 - INFO - status:	200
+2023-11-12 20:26:43,602 - ERROR - Error occurred while printing GeeksforGeeks
+Traceback (most recent call last):
+  File "/server/app/wsgi.py", line 83, in home_page
+    _delete_db()
+  File "/server/app/wsgi.py", line 43, in _delete_db
+    now = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2023-11-12 20:26:43,602 - INFO - 127.0.0.1 - - [12/Nov/2023 20:26:43] "POST / HTTP/1.1" 200 -
+2023-11-12 20:27:40,522 - INFO -  * Detected change in '/server/app/wsgi.py', reloading
+2023-11-12 20:29:12,548 - INFO - method:	{request.method}
+2023-11-12 20:29:12,557 - INFO - filename:	000000000_noise.wav
+2023-11-12 20:29:16,683 - INFO - time:	4.12
+2023-11-12 20:29:16,683 - INFO - status:	200
+2023-11-12 20:29:16,686 - ERROR - Error occurred while printing GeeksforGeeks
+Traceback (most recent call last):
+  File "/server/app/wsgi.py", line 83, in home_page
+    _delete_db()
+  File "/server/app/wsgi.py", line 43, in _delete_db
+    now = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2023-11-12 20:29:16,687 - INFO - 127.0.0.1 - - [12/Nov/2023 20:29:16] "POST / HTTP/1.1" 200 -
+2023-11-12 20:29:46,460 - INFO -  * Detected change in '/server/app/wsgi.py', reloading
+2023-11-12 20:30:08,225 - INFO - method:	{request.method}
+2023-11-12 20:30:08,236 - INFO - filename:	000000000_noise.wav
+2023-11-12 20:30:12,445 - INFO - time:	4.21
+2023-11-12 20:30:12,445 - INFO - status:	200
+2023-11-12 20:30:12,447 - ERROR - Error occurred while printing GeeksforGeeks
+Traceback (most recent call last):
+  File "/server/app/wsgi.py", line 84, in home_page
+    _delete_db()
+  File "/server/app/wsgi.py", line 43, in _delete_db
+    now = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2023-11-12 20:30:12,448 - INFO - 127.0.0.1 - - [12/Nov/2023 20:30:12] "POST / HTTP/1.1" 200 -
+2023-11-12 20:31:23,236 - INFO -  * Detected change in '/server/app/database.py', reloading
+2023-11-12 20:32:38,698 - INFO - method:	{request.method}
+2023-11-12 20:32:38,705 - INFO - filename:	000000000_noise.wav
+2023-11-12 20:32:42,633 - INFO - time:	3.93
+2023-11-12 20:32:42,633 - INFO - status:	200
+2023-11-12 20:32:42,635 - INFO - 127.0.0.1 - - [12/Nov/2023 20:32:42] "POST / HTTP/1.1" 200 -
+2023-11-12 20:32:42,647 - INFO - 127.0.0.1 - - [12/Nov/2023 20:32:42] "GET /statics/database/inputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 20:32:42,652 - INFO - 127.0.0.1 - - [12/Nov/2023 20:32:42] "GET /statics/database/outputs/000000000_noise.wav HTTP/1.1" 200 -
+2023-11-12 20:32:43,906 - INFO - 127.0.0.1 - - [12/Nov/2023 20:32:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

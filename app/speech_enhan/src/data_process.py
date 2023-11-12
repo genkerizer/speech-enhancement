@@ -10,10 +10,8 @@ def mag_pha_stft(y, n_fft, hop_size, win_size, compress_factor=1.0, center=True)
    
     mag = torch.abs(stft_spec)
     pha = torch.angle(stft_spec)
-    # Magnitude Compression
     mag = torch.pow(mag, compress_factor)
     com = torch.stack((mag*torch.cos(pha), mag*torch.sin(pha)), dim=-1)
-
     return mag, pha, com
 
 

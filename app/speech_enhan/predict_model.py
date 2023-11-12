@@ -70,28 +70,52 @@ class SpeechEnhancement:
         state_dict = torch.load(weight_path, map_location=self.device)
         print("Complete.")
         return state_dict
+    
+
+    def split_audio(self, signal, duration, sampling_rate=16000, max_duration_per_process=1.0):
+        if duration < max_duration_per_process:
+            return [signal]
+        num_split = int(duration // max_duration_per_process)
+        split_signal_list = []
+        for i in range(0, num_split):
+            tmp_split_signal = signal[i * sampling_rate:(i+1)*sampling_rate]
+            split_signal_list.append(tmp_split_signal)
+        if num_split * max_duration_per_process < duration - 100:
+            split_signal_list.append(signal[num_split*sampling_rate:])
+        return split_signal_list
+
+
+
 
 
     def predict(self, audio_path, output_dir="app/speech_enhan/outputs"):
         assert self.model is not None
         assert os.path.exists(audio_path)
         name = audio_path.split('/')[-1]
-            
         with torch.no_grad():
-            noisy_wav, _ = librosa.load(audio_path, self.h.sampling_rate)
-    
-            noisy_wav = torch.FloatTensor(noisy_wav).to(self.device)
-            norm_factor = torch.sqrt(len(noisy_wav) / torch.sum(noisy_wav ** 2.0)).to(self.device)
-            noisy_wav = (noisy_wav * norm_factor).unsqueeze(0)
-            noisy_amp, noisy_pha, noisy_com = mag_pha_stft(noisy_wav, self.h.n_fft, self.h.hop_size, self.h.win_size, self.h.compress_factor)
-            amp_g, pha_g, com_g = self.model(noisy_amp, noisy_pha)
-            audio_g = mag_pha_istft(amp_g, pha_g, self.h.n_fft, self.h.hop_size, self.h.win_size, self.h.compress_factor)
-            audio_g = audio_g / norm_factor
-            output_file = os.path.join(output_dir, name)
-            sf.write(output_file, audio_g.squeeze().cpu().numpy(), self.h.sampling_rate, 'PCM_16')
-            return output_file
+            signal, _ = librosa.load(audio_path, self.h.sampling_rate)
+            duration = len(signal) / self.h.sampling_rate
+            split_signal = self.split_audio(signal, duration)
+            
+            output_list = []
+
+            for noisy_wav in split_signal:
+                noisy_wav = torch.FloatTensor(noisy_wav).to(self.device)
+                norm_factor = torch.sqrt(len(noisy_wav) / torch.sum(noisy_wav ** 2.0)).to(self.device)
+                noisy_wav = (noisy_wav * norm_factor).unsqueeze(0)
+                noisy_amp, noisy_pha, noisy_com = mag_pha_stft(noisy_wav, self.h.n_fft, self.h.hop_size, self.h.win_size, self.h.compress_factor)
+                amp_g, pha_g, com_g = self.model(noisy_amp, noisy_pha)
+                audio_g = mag_pha_istft(amp_g, pha_g, self.h.n_fft, self.h.hop_size, self.h.win_size, self.h.compress_factor)
+                audio_g = audio_g / norm_factor
+                output_list.append(audio_g)
+            output_list = torch.cat(output_list, -1)
+            output_file = os.path.join(output_dir, '.'.join(name.split('.')[:-1] + ['wav']))
+            print(output_file)
+
+            sf.write(output_file, output_list.squeeze().cpu().numpy(), self.h.sampling_rate, 'PCM_16')
+            return output_file, duration
 
 if __name__ == '__main__':
     class_ = SpeechEnhancement()
-    class_.predict('app/speech_enhan/debugs/000000000_noise.wav')
+    class_.predict('speech_enhan/debugs/64.mp3')
    

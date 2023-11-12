@@ -1,4 +1,6 @@
 flask
+torch
+pymongo
 gunicorn
 numpy==1.21.6
 librosa==0.7.2
